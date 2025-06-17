@@ -10,21 +10,52 @@
 
     <ImageView
         android:id="@+id/imageViewAviao"
-        android:layout_width="91dp"
-        android:layout_height="119dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="74dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="80dp"
         android:src="@drawable/aviao"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/textViewPontuacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/angkor"
+        android:text="Pontuação: "
+        android:textColor="#EBE0E0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutJogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRestart"
+        android:layout_width="72dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/restart" />
+
     <FrameLayout
         android:id="@+id/layoutJogo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="83dp">
+
+        <ImageView
+            android:id="@+id/imageViewGameOver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:srcCompat="@drawable/gameover" />
 
     </FrameLayout>
 
